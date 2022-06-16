@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>accumulateString</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>Aufgabe accumulateString</p>
+  <br>
+
+  <ion-input type="text" [(ngModel)]="inputString" (ngModelChange)="changeMyString($event)" text-right id="input" > Input:  </ion-input>
+
+  <p>output: {{outputString}}</p>
+
+</ion-content>
