@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public appPages = [
     { title: 'accumulate-string', url: 'accumulate-string', icon: 'document' },
+    { title: 'valid-braces', url: 'valid-braces', icon: 'document' },
 
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
