@@ -5,5 +5,14 @@
 </ion-header>
 
 <ion-content>
-  <p>Testparagraph</p>
+  <div class="container">
+    <h1>Valid-Braces</h1>
+    <p>Aufgabenbeschreibung: Es wird geprüft ob in einer Zeichenkette von Klammern, jede geöffnete Klammer auch eine Schließende enthält</p>
+      <br>
+    <p>Klammern: {{braces}}</p>
+      <br>
+    <p>Klammercheck: {{isValid}}</p>
+    <ion-button (click)="checkBraces()">check</ion-button>
+  </div>
+
 </ion-content>

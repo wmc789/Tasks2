@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'valid-braces',
     loadChildren: () => import('./tasks/valid-braces/valid-braces.module').then( m => m.ValidBracesPageModule)
   },
+  {
+    path: 'chocolate-task',
+    loadChildren: () => import('./tasks/chocolate-task/chocolate-task.module').then( m => m.ChocolateTaskPageModule)
+  },
 ];
 
 @NgModule({
