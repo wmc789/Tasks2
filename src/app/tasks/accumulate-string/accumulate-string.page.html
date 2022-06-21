@@ -6,9 +6,19 @@
 
 <ion-content>
   <h1>Aufgabe accumulateString</h1>
-  <p>Aufgabenbeschreibung: Abhänging von ihrer Stelle sollen in einer Zeichenkette die Buchstaben durch einen Bindestrich getrennt und
-     mehrmals ausgegeben werden.
-  </p>
+    <p>Aufgabenbeschreibung: Abhänging von ihrer Stelle sollen in einer Zeichenkette die Buchstaben durch einen Bindestrich getrennt und
+      mehrmals ausgegeben werden.
+    </p>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>was passiert ?</ion-card-subtitle>
+      <ion-card-title>Beispiel</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Beispiel: Auf die Eingabe {{exampleString}} folgt A-Bb-Ccc-Dddd.
+    </ion-card-content>
+  </ion-card>  
   <br>
 
   <ion-input type="text" [(ngModel)]="inputString" (ngModelChange)="changeMyString($event)" text-right id="input" > Input:  </ion-input>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input , Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-accumulate-string',
@@ -7,9 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class AccumulateStringPage implements OnInit {
 
+  
   //private myString = '';
   inputString = '';
   outputString = '';
+
+  exampleString = 'abcd';
 
   constructor() { }
 
