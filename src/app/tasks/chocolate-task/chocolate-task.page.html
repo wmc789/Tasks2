@@ -15,10 +15,12 @@
 
       <ion-card-content>
         Beispiel: Schokoriegel mit Stückchen der größe 1x1 sollen verteilt werden
+        Ein 5x1 langer Schokoriegel muss 4mal geteilt werden ein 3x1 nur 2mal.
       </ion-card-content>
     </ion-card>
     <br>
-    <p>{{breaks}}</p>
+    <ion-input type="number" [(ngModel)]="columns" (ngModelChange)="getBreaks(columns, squares)">die Länge des Riegels: </ion-input> 
+    <p>Der Riegel wird {{breaks}}mal geteilt</p>
   </div>
 
 
