@@ -16,19 +16,30 @@ export class ValidBracesPage implements OnInit {
 
   isValid;
 
-  braces = '{}{';
+  braces = '{}(([';
+
+  regex = /\(\)|\[\]|\{\}/;
+
+  //  Idee für Logik: Ich nehme passende Klammerpaare einfach RAUS mit pop() ???
+  //  wenn braces = Leer dann true wenn einzelne Klammer übrig dann false
 
   checkBraces(){
 
-    if(this.braces.includes(('{' && '}' )||( '(' && ')' )||( '[' && ']'))){
+    /*if(this.braces.includes(('{' && '}' )||( '(' && ')' )||( '[' && ']'))){
       this.isValid = true;
     }
     else{
       this.isValid = false;
     }
-
-
     console.log(this.isValid);
+    */
+
+    if(this.regex.test(this.braces)){
+      this.isValid = true;
+    }
+    else{
+      this.isValid = false;
+    }
   }
 }
 

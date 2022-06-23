@@ -7,12 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChocolateTaskPage implements OnInit {
 
+  columns = 5;
+  squares = 1;
+
+  breaks;
+
   constructor() { }
 
   ngOnInit() {
+    this.getBreaks(this.columns, this.squares);
+  }
+
+  getBreaks(columns, squares){
+    const breaks = Math.max( columns * squares - 1);
+    console.log('breaks: ', breaks );
+    this.breaks = breaks;
   }
 
 }
+
 
 /*
 	Chocolate-Aufgabe:
