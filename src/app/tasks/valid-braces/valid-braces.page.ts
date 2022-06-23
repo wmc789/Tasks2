@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/member-ordering */
 import { Component, OnInit } from '@angular/core';
 
@@ -15,19 +16,30 @@ export class ValidBracesPage implements OnInit {
 
   isValid;
 
-  braces = '{}{';
+  braces = '{}(([';
+
+  regex = /\(\)|\[\]|\{\}/;
+
+  //  Idee für Logik: Ich nehme passende Klammerpaare einfach RAUS mit pop() ???
+  //  wenn braces = Leer dann true wenn einzelne Klammer übrig dann false
 
   checkBraces(){
 
-    if(this.braces.includes(('{' && '}' )||( '(' && ')' )||( '[' && ']'))){
+    /*if(this.braces.includes(('{' && '}' )||( '(' && ')' )||( '[' && ']'))){
       this.isValid = true;
     }
     else{
       this.isValid = false;
     }
-
-
     console.log(this.isValid);
+    */
+
+    if(this.regex.test(this.braces)){
+      this.isValid = true;
+    }
+    else{
+      this.isValid = false;
+    }
   }
 }
 
@@ -39,14 +51,11 @@ export class ValidBracesPage implements OnInit {
    but introduces new characters: brackets [], and curly braces {}.
 All input strings will be nonempty, and will only consist of parentheses, brackets and curly braces: ()[]{}.
 What is considered Valid?
-
 A string of braces is considered valid if all braces are matched with the correct brace.
 Examples
-
 "(){}[]"   =>  True
 "([{}])"   =>  True
 "(}"       =>  False
 "[(])"     =>  False
 "[({})](]" =>  False
-
  */
