@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'chocolate-task',
     loadChildren: () => import('./tasks/chocolate-task/chocolate-task.module').then( m => m.ChocolateTaskPageModule)
   },
+  {
+    path: 'quersumme',
+    loadChildren: () => import('./tasks/quersumme/quersumme.module').then( m => m.QuersummePageModule)
+  },
 ];
 
 @NgModule({

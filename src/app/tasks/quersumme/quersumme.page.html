@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Quersumme</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container-QSum">
+    <h1>Quersumme</h1>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>was passiert ?</ion-card-subtitle>
+        <ion-card-title>Beispiel</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        Die Quersumme einer Zahl, welche der Benutzer eingibt soll berechnet werden!
+        Beispiel: 4572 -> 4+5+7+2 = 18 ist Quersumme!
+      </ion-card-content>
+    </ion-card>
+    <br>
+    <ion-input type="number" [(ngModel)]="inputNum" (ngModelChange)="sumDigits(inputNum)">Geben Sie Ihre Zahl ein: </ion-input>
+    <p>Die Quersumme beträgt: {{qSum}}</p>
+  </div>
+</ion-content>

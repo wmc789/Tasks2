@@ -9,6 +9,7 @@ export class AppComponent {
     { title: 'accumulate-string', url: 'accumulate-string', icon: 'document' },
     { title: 'valid-braces', url: 'valid-braces', icon: 'document' },
     { title: 'chocolate-task', url: 'chocolate-task', icon: 'document' },
+    { title: 'quersumme', url: 'quersumme', icon: 'document' },
 
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
