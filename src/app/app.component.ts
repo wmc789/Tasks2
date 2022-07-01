@@ -10,6 +10,7 @@ export class AppComponent {
     { title: 'valid-braces', url: 'valid-braces', icon: 'document' },
     { title: 'chocolate-task', url: 'chocolate-task', icon: 'document' },
     { title: 'quersumme', url: 'quersumme', icon: 'document' },
+    { title: 'data-to-child', url: 'data-to-child', icon: 'document' },
 
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];

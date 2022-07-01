@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'quersumme',
     loadChildren: () => import('./tasks/quersumme/quersumme.module').then( m => m.QuersummePageModule)
   },
+  {
+    path: 'data-to-child',
+    loadChildren: () => import('./tasks/data-to-child/data-to-child.module').then( m => m.DataToChildPageModule)
+  },
 ];
 
 @NgModule({
