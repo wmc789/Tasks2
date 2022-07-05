@@ -19,7 +19,7 @@ export class ChildComponent implements OnInit {
   ngOnInit() {}
 
   sendMessage(){
-    this.messageEvent.emit('Ping von child!');
+    this.messageEvent.emit('Ping von Child wurde gesendet!');
   }
 
 }
