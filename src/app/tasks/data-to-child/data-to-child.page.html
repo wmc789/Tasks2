@@ -7,10 +7,13 @@
 <ion-content>
   <div class="parent-container">
     <h2>Parent-Component</h2>
+    <!--app-child (messageEvent)="recieveMessage($event)"></app-child-->
+    <p (messageEvent)="recieveMessage($event)"></p> <!---->
+
 
     <div class="child-container">
       <h3>Child-Component</h3>
-      <app-child></app-child>
+      <app-child [childMessage] = "'Nachricht generiert in Child'"></app-child> <!--dynamisch machen !! NgIf -->
     </div>
 
   </div>

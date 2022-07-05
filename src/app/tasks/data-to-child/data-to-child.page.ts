@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { ChildComponent } from './child/child.component';
 
 @Component({
   selector: 'app-data-to-child',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataToChildPage implements OnInit {
 
+  @ViewChild(ChildComponent) child;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  /*ngAfterViewInit() {
+    alert(this.child.nachricht);
+  }*/
+
+  recieveMessage(msg){
+    alert(msg);
+  }
 }
