@@ -14,6 +14,8 @@ export class ChildComponent implements OnInit {
 
   nachricht = 'Signal von Child';
 
+  clicks = 0;
+
   constructor() { }
 
   ngOnInit() {}
@@ -22,4 +24,7 @@ export class ChildComponent implements OnInit {
     this.messageEvent.emit('Ping von Child wurde gesendet!');
   }
 
+  clickCount(){
+    this.clicks ++;
+  }
 }

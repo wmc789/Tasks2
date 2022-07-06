@@ -22,4 +22,5 @@ export class DataToChildPage implements OnInit {
   recieveMessage(msg){
     alert(msg);
   }
+
 }
