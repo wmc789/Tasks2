@@ -8,12 +8,12 @@
   <div class="parent-container">
     <h2>Parent-Component</h2>
     <!--app-child (messageEvent)="recieveMessage($event)"></app-child-->
-    <p (messageEvent)="recieveMessage($event)"></p> <!---->
 
 
     <div class="child-container">
       <h3>Child-Component</h3>
-      <app-child [childMessage] = "'Nachricht generiert in Child'"></app-child> <!--dynamisch machen !! NgIf -->
+      <!--app-child [childMessage] = "'Nachricht generiert in Child'"></app-child> <!--dynamisch machen !! NgIf -->
+      <app-child (messageEvent)="recieveMessage($event)"></app-child> 
     </div>
 
   </div>
