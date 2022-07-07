@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'data-to-child',
     loadChildren: () => import('./tasks/data-to-child/data-to-child.module').then( m => m.DataToChildPageModule)
   },
+  {
+    path: 'parent',
+    loadChildren: () => import('./parent/parent.module').then( m => m.ParentPageModule)
+  },
 ];
 
 @NgModule({
