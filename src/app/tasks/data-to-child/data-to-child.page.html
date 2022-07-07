@@ -8,12 +8,13 @@
   <div class="parent-container">
     <h2>Parent-Component</h2>
     <!--app-child (messageEvent)="recieveMessage($event)"></app-child-->
+    <h3>Counter: {{counter}}</h3><!--der Counter soll im Parent angezeigt-->
 
 
     <div class="child-container">
       <h3>Child-Component</h3>
-      <!--app-child [childMessage] = "'Nachricht generiert in Child'"></app-child> <!--dynamisch machen !! NgIf -->
-      <app-child (messageEvent)="recieveMessage($event)"></app-child> 
+      <!--app-child [childMessage] = "'Nachricht generiert in Child'"></app-child> dynamisch machen !! NgIf -->
+      <app-child (incrementEvent)="increment()" (decrementEvent)="decrement()"></app-child>
     </div>
 
   </div>
