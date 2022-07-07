@@ -10,6 +10,8 @@ export class DataToChildPage implements OnInit {
 
   @ViewChild(ChildComponent) child;
 
+  counter = 0;
+
   constructor() { }
 
   ngOnInit() {
@@ -19,8 +21,11 @@ export class DataToChildPage implements OnInit {
     alert(this.child.nachricht);
   }*/
 
-  recieveMessage(msg){
-    alert(msg);
+  increment(){
+    this.counter++;
+  }
+  decrement(){
+    this.counter--;
   }
 
 }
