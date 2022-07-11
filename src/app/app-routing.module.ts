@@ -19,6 +19,18 @@ const routes: Routes = [
     path: 'chocolate-task',
     loadChildren: () => import('./tasks/chocolate-task/chocolate-task.module').then( m => m.ChocolateTaskPageModule)
   },
+  {
+    path: 'quersumme',
+    loadChildren: () => import('./tasks/quersumme/quersumme.module').then( m => m.QuersummePageModule)
+  },
+  {
+    path: 'data-to-child',
+    loadChildren: () => import('./tasks/data-to-child/data-to-child.module').then( m => m.DataToChildPageModule)
+  },
+  {
+    path: 'parent',
+    loadChildren: () => import('./parent/parent.module').then( m => m.ParentPageModule)
+  },
 ];
 
 @NgModule({
