@@ -12,4 +12,8 @@ export class Child2Page implements OnInit {
   ngOnInit() {
   }
 
+  sendMsg(){
+    let msg = 'Ping von Child';
+  }
+
 }
