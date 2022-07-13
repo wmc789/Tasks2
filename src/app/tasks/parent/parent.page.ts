@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Child2Page } from './child2/child2.page';
+
 
 @Component({
   selector: 'app-parent',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentPage implements OnInit {
 
+  @ViewChild(Child2Page) child2;
+  
+  clicked = false;
+
+  if(clicked = true){
+    
+  }
+
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }

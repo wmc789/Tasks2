@@ -29,7 +29,7 @@ const routes: Routes = [
   },
   {
     path: 'parent',
-    loadChildren: () => import('./parent/parent.module').then( m => m.ParentPageModule)
+    loadChildren: () => import('./tasks/parent/parent.module').then( m => m.ParentPageModule)
   },
 ];
 
