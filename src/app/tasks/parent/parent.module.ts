@@ -8,6 +8,8 @@ import { ParentPageRoutingModule } from './parent-routing.module';
 
 import { ParentPage } from './parent.page';
 
+import { Child2Component } from './child2/child2.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,6 @@ import { ParentPage } from './parent.page';
     IonicModule,
     ParentPageRoutingModule
   ],
-  declarations: [ParentPage]
+  declarations: [ParentPage, Child2Component]
 })
 export class ParentPageModule {}

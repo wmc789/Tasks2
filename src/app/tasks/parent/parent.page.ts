@@ -1,8 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ChildComponent } from '../data-to-child/child/child.component';
-//import * as EventEmitter from 'events';
-import { Child2Page } from './child2/child2.page';
-
+import { Child2Component } from './child2/child2.component';
 
 @Component({
   selector: 'app-parent',
@@ -11,13 +8,15 @@ import { Child2Page } from './child2/child2.page';
 })
 export class ParentPage implements OnInit {
 
-  @ViewChild(Child2Page) child2;
+  @ViewChild(Child2Component) child;
 
-  //clickEvent = new EventEmitter<boolean>();
-
-  //clicked = false
+  ping = 'Placeholder';
 
   constructor() { }
+
+  getPing(ping: string){
+    this.ping = ping;
+  }
 
   ngOnInit() {
   }

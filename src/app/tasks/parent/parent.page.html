@@ -7,8 +7,11 @@
 <ion-content>
   <div class="parent-container">
     <h1>Parent</h1>
-    <ion-button click="sendMsg()">Button</ion-button>
-  </div>
 
-  <app-child>Nachricht:{{msg}}</app-child>
+  </div>
+  <br>
+  
+  <app-child2 (pingEvent)="getPing($event)"></app-child2>
+  <br>
+    {{ping}} 
 </ion-content>
