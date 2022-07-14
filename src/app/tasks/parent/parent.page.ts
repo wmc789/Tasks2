@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import * as EventEmitter from 'events';
+import { ChildComponent } from '../data-to-child/child/child.component';
+//import * as EventEmitter from 'events';
 import { Child2Page } from './child2/child2.page';
 
 
@@ -11,18 +12,10 @@ import { Child2Page } from './child2/child2.page';
 export class ParentPage implements OnInit {
 
   @ViewChild(Child2Page) child2;
-  clickEvent = new EventEmitter<boolean>();
 
-  clicked = false;
+  //clickEvent = new EventEmitter<boolean>();
 
-  getClick(){
-    this.clicked = true;
-
-    if(this.clicked === true){
-      console.log(this.clicked);
-      console.log("Test");
-    }
-  }
+  //clicked = false
 
   constructor() { }
 
